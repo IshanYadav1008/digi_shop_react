@@ -100,4 +100,18 @@ VITE_API_URL=your_backend_url
 // Axios automatically sends JWT token with every request
 // via Axios Interceptor — no manual token handling needed
 
+
+## 🌐 Live Demo
+
+Frontend
+--------
+## 🌍 Live Demo: 
+https://digi-shop-react.vercel.app
+
+## 🌐 Backend API
+https://digi-shop-node.onrender.com
+
+## 🖥️ Backend Repository
+https://github.com/IshanYadav1008/digi_shop_node
+
 ## 👤 Author: Ishan Yadav

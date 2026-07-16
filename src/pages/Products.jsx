@@ -26,6 +26,9 @@ function Products() {
     const fetchProducts = async () => {
       try {
         const response = await API.get('/product')
+        
+        console.log("API Response:", response.data);
+
         setProducts(response.data)
         setLoading(false)
 
@@ -45,6 +48,15 @@ function Products() {
 
       {products.map((product) => (
         <div key={product._id}>
+
+      <img
+            src={product.image !== 'default-product.png' 
+              ? product.image 
+              : 'https://via.placeholder.com/200'}
+            alt={product.name}
+            style={{ width: '200px', height: '200px', objectFit: 'cover' }}
+      />
+
           <h3>{product.name}</h3>
           <p>Price    : ₹{product.price}</p>
           <p>Category : {product.category}</p>

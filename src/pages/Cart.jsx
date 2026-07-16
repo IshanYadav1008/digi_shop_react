@@ -68,6 +68,14 @@ function Cart() {
       {cart.items.map((item) => (
         <div key={item._id}>
 
+      <img
+            src={item.product.image !== 'default-product.png'
+              ? item.product.image
+              : 'https://via.placeholder.com/200'}
+            alt={item.product.name}
+            style={{ width: '100px', height: '100px', objectFit: 'cover' }}
+      />
+
           {}
           <h3>{item.product.name}</h3>
           <p>Price : ₹{item.product.price}</p>

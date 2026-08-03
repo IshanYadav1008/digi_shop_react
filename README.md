@@ -13,7 +13,7 @@ control.
 |-----------------------|----------------------------------------------------|
 | 🌐 Live Demo          | https://digi-shop-react.vercel.app                 |
 | 🚀 Backend API        | https://digi-shop-node.onrender.com                |
-| 💻 Backend Repository | https://github.com/IshanYadav1008/digishop-backend |
+| 💻 Backend Repository | https://github.com/IshanYadav1008/digi_shop_node   |
 
 ---
 
@@ -114,7 +114,7 @@ src
 
 ```bash
 # Clone repository
-git clone https://github.com/IshanYadav1008/digishop-frontend.git
+git clone https://github.com/IshanYadav1008/digi_shop_react.git
 
 # Navigate to project
 cd digishop-frontend

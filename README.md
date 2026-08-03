@@ -1,63 +1,97 @@
-# DigiShop — Frontend
+# DigiShop Frontend
 
-A full-featured e-commerce frontend built with React and Vite, 
-connected to DigiShop Backend API.
+A modern e-commerce frontend built with **React.js** and **Vite**, connected 
+to the DigiShop Backend API. The application provides user authentication, 
+product browsing, cart management, order tracking, and role-based access 
+control.
 
-## 🚀 Live URL
-Coming Soon
+---
 
-## 🔗 Backend Repository
-Coming Soon
+# Live Links
 
-## 🛠️ Tech Stack
-- **Framework**   — React 18
-- **Build Tool**  — Vite
-- **Routing**     — React Router DOM
-- **HTTP Client** — Axios
-- **State**       — Context API + localStorage
+| Resource              |                     Link                           |
+|-----------------------|----------------------------------------------------|
+| 🌐 Live Demo          | https://digi-shop-react.vercel.app                 |
+| 🚀 Backend API        | https://digi-shop-node.onrender.com                |
+| 💻 Backend Repository | https://github.com/IshanYadav1008/digishop-backend |
 
-## ✨ Features
+---
+
+# Features
 
 ### Authentication
+
 - User Signup & Login
-- JWT Token stored in localStorage
-- Auto logout on token expiry
-- Redirect after login/signup
+- JWT Authentication
+- Token stored in Local Storage
+- Automatic Login Persistence
+- Logout Functionality
 
 ### Products
-- View all products
-- Add to cart — logged in users only
+
+- Browse Products
+- View Product Details
+- Search Products
+- Add Products to Cart
 
 ### Cart
-- View cart items
-- Update product quantity
-- Remove products from cart
-- Place order from cart
+
+- View Cart
+- Update Product Quantity
+- Remove Products
+- Place Orders
 
 ### Orders
-- View all orders
-- Cancel pending orders
-- Track order status
+
+- View Order History
+- Cancel Pending Orders
+- Track Order Status
+
+### User Profile
+
+- View Profile
+- Update Profile
 
 ### Admin
-- View all users
-- Users List page — admin only
+
+- View Registered Users
+- Protected Admin Routes
 
 ### Security
-- Protected Routes — login required
-- Admin Routes     — admin role required
-- JWT Token sent automatically with every request via Axios Interceptor
 
-## 📁 Project Structure
------------------------
-src/
-├── components/
+- Protected Routes
+- Role-Based Authorization
+- Axios Interceptors for JWT Authentication
+
+---
+
+# Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| React.js | Frontend Library |
+| Vite | Build Tool |
+| React Router DOM | Client-side Routing |
+| Axios | HTTP Client |
+| Context API | State Management |
+| Local Storage | JWT Token Storage |
+
+---
+
+# Project Structure
+
+```text
+src
+│
+├── components
 │   ├── Navbar.jsx
 │   ├── ProtectedRoute.jsx
 │   └── AdminRoute.jsx
-├── context/
+│
+├── context
 │   └── AuthContext.jsx
-├── pages/
+│
+├── pages
 │   ├── Login.jsx
 │   ├── Signup.jsx
 │   ├── Home.jsx
@@ -66,52 +100,83 @@ src/
 │   ├── Orders.jsx
 │   ├── Profile.jsx
 │   └── UsersList.jsx
-├── services/
+│
+├── services
 │   └── api.js
+│
 ├── App.jsx
 └── main.jsx
+```
 
-## ⚙️ Setup & Installation
---------------------------
+---
 
-# Clone the repository
-git remote add origin https://github.com/IshanYadav1008/digi_shop_react.git
+# Installation
 
-# Go to project folder
-cd digi_shop_react
+```bash
+# Clone repository
+git clone https://github.com/IshanYadav1008/digishop-frontend.git
+
+# Navigate to project
+cd digishop-frontend
 
 # Install dependencies
 npm install
 
 # Create .env file
-touch .env
 
-# Add environment variable
+# Add backend URL
 VITE_API_URL=http://localhost:3000
 
 # Start development server
 npm run dev
+```
 
-## 🔐 Environment Variables
-VITE_API_URL=your_backend_url
+---
 
-## 🔗 API Connection
---------------------
-// Axios automatically sends JWT token with every request
-// via Axios Interceptor — no manual token handling needed
+# Environment Variables
 
+```env
+VITE_API_URL=your_backend_api_url
+```
 
-## 🌐 Live Demo
+---
 
-Frontend
---------
-## 🌍 Live Demo: 
-https://digi-shop-react.vercel.app
+# Backend Integration
 
-## 🌐 Backend API
-https://digi-shop-node.onrender.com
+The frontend communicates with the DigiShop Backend using **Axios**.
 
-## 🖥️ Backend Repository
-https://github.com/IshanYadav1008/digi_shop_node
+- REST API Communication
+- JWT Authentication
+- Axios Interceptors
+- Automatic Authorization Header
 
-## 👤 Author: Ishan Yadav
+---
+
+# Available Scripts
+
+```bash
+npm run dev      # Development Server
+npm run build    # Production Build
+npm run preview  # Preview Production Build
+```
+
+---
+
+# Future Improvements
+
+- Responsive UI
+- Product Filters
+- Wishlist
+- Product Reviews
+- Pagination
+- Admin Dashboard
+- Order Invoice
+
+---
+
+# Author
+
+**Ishan Yadav**
+
+- GitHub: https://github.com/IshanYadav1008
+- LinkedIn: https://www.linkedin.com/in/ishan-yadav-969b15120
